@@ -18,7 +18,13 @@ NAMESPACE Siemens.Ax
             i1 : LREAL;
             i2 : LREAL;
         END_VAR
-            Add := i1 + i2;
+        VAR_TEMP
+            lb, ub, i : DINT;
+        END_VAR
+
+        FOR i := lb TO ub DO
+            ;
+        END_FOR;
     END_FUNCTION
 
 END_NAMESPACE

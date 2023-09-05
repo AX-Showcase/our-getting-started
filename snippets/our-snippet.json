@@ -1,0 +1,17 @@
+{
+    "create_fb": {
+      "scope": "st",
+      "prefix": [
+        "create, fb"
+      ],
+      "body": [
+        "NAMESPACE our_company_namespace",
+        "\tFUNCTION_BLOCK $TM_FILENAME_BASE",
+        "\t\tvar",
+        "\t\tEND_VAR",
+        "\tEND_FUNCTION_BLOCK;",
+        "END_NAMESPACE"
+      ],
+      "description": "Surround selected text with if-else"
+     }
+  }

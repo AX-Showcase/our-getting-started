@@ -19,4 +19,6 @@ scripts:
     - apax build
     - apax load
 devDependencies:
-  "@ax/sdk": 4.0.3
+  "@ax/sdk": 4.0.8
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
