@@ -1,8 +1,6 @@
 on: push
 
 jobs:
-  print_some_text:
-    echo print_some_text
   build-apax-lib:
     uses: simatic-ax/actions/.github/workflows/apax-build.yml@stable
     secrets:
