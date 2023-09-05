@@ -1,0 +1,7 @@
+# Watch the global variable myString. It should have the value 'Hello AX World'
+myString
+
+# Watch the value of sum = Add(v1 + v2);
+v1
+v2
+sum

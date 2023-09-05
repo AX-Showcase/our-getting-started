@@ -1,0 +1,22 @@
+name: "our-getting-started"
+version: 0.0.1
+author: Siemens AG
+description: Getting started application example
+type: app
+targets:
+  - "1500"
+  - "plcsim"
+  - axunit-llvm
+variables:
+  APAX_BUILD_ARGS:
+    - --debug # Enable debug information for value debugging
+  BIN_FOLDER: "./bin/plcsim"
+  IP_ADDRESS: "192.168.0.1"
+scripts:
+  load: sld -i $BIN_FOLDER -t $IP_ADDRESS -r --accept-security-disclaimer -l debug
+    --default-server-interface
+  dlsim:
+    - apax build
+    - apax load
+devDependencies:
+  "@ax/sdk": 4.0.3
